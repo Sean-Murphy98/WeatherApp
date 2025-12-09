@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="icon"
+      href="6c4272135110d4193706.svg"
+      type="image/svg+xml"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="fullContainer">
+      <div id="appTitleContainer">
+        <h1 id="appTitle">Weather App</h1>
+      </div>
+      <div id="cityFormContainer">
+        <form id="cityForm">
+          <input
+            type="search"
+            id="cityName"
+            maxlength="100"
+            placeholder="Enter a city..."
+            required
+          />
+          <div id="toggleUnit">
+            <label class="switch">
+              <input type="checkbox" id="unitMode" value="metric" />
+              <span class="slider"></span>
+            </label>
+            <h3 class="modeLabel">°C / °F</h3>
+          </div>
+          <button id="submitCity" type="submit">Get Weather</button>
+        </form>
+      </div>
+      <div id="spinner"></div>
+      <div id="weatherDisplayContainer"></div>
+    </div>
+  </body>
+</html>
