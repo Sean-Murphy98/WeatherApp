@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Weather App</title>
+    <link
+      rel="icon"
+      href="./images/partly-snowy-rainy.svg"
+      type="image/svg+xml"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="fullContainer">
+      <div id="appTitleContainer">
+        <h1 id="appTitle">Weather App</h1>
+      </div>
+      <div id="cityFormContainer">
+        <form id="cityForm">
+          <input
+            type="search"
+            id="cityName"
+            maxlength="100"
+            placeholder="Enter a city..."
+            required
+          />
+          <div id="toggleUnit">
+            <label class="switch">
+              <input type="checkbox" id="unitMode" value="metric" />
+              <span class="slider"></span>
+            </label>
+            <h3 class="modeLabel">°C / °F</h3>
+          </div>
+          <button id="submitCity" type="submit">Get Weather</button>
+        </form>
+      </div>
+      <div id="spinner"></div>
+      <div id="weatherDisplayContainer"></div>
+    </div>
+  </body>
 </html>
